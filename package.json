@@ -1,0 +1,23 @@
+{
+  "name": "fightclip-ai",
+  "version": "1.0.0",
+  "description": "FightClip AI - Automated boxing/MMA highlight video generator",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinjin-haus1/fightclip-ai.git"
+  },
+  "keywords": ["boxing", "mma", "video", "ai", "highlights"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0"
+  }
+}
