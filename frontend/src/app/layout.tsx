@@ -1,15 +1,12 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import theme from './theme';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'FightClip AI',
-  description: 'AI-powered fight clip analysis and management',
+  title: 'FightClip AI - Boxing & MMA Highlight Generator',
+  description: 'Automatically detect highlights from boxing and MMA footage and export to TikTok, Reels, and Shorts',
 };
 
 export default function RootLayout({
@@ -19,14 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            <CssBaseline />
-            {children}
-          </ThemeProvider>
-        </AppRouterCacheProvider>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
